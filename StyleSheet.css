@@ -1,0 +1,60 @@
+﻿body 
+{
+	
+}
+.ddl
+{
+	font-family:Verdana;
+	font-size:8pt;	
+}
+
+
+.tbfont
+{
+	font-family:Verdana;
+	font-size:small;
+	
+	font-size: 8pt;
+	width: 160px; 
+	color: #ffffff;
+	background-color: #095cc2;
+	font-weight: bolder;
+	
+}
+
+	
+.tb
+{
+	border-collapse: collapse;
+	
+}
+.tbdark
+{
+	border-collapse: collapse;
+	font-weight: bold;
+	font-size: 10pt; 
+	color: #ffffff; 
+	font-family: Verdana;
+	background-color: #004c99; 
+	height: 20px;
+	
+	
+}
+
+.stf
+{
+    border-collapse: collapse;
+	font-size:8pt; 
+	font-family: Verdana;
+	height:25px;
+
+}
+.DLsmall
+{
+	font-family:Verdana;
+	font-size:8pt; 
+}
+.tushar
+{
+	color:Aqua;
+}

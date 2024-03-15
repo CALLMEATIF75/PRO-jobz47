@@ -1,0 +1,460 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="CSS Templets/splendid/splendid/style.css" rel="stylesheet" type="text/css" />
+    <link href ="CSS Templets/splendid/splendid/StyleSheet.css" rel="Stylesheet" type ="text/css"/>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 25px;
+        }
+        .style3
+        {
+            width: 40px;
+        }
+        .style4
+        {
+            width: 32px;
+        }
+        .style6
+        {
+            width: 73px;
+        }
+        .style7
+        {
+            width: 47px;
+        }
+        .style8
+        {
+            width: 10px;
+        }
+        .style9
+        {
+            width: 78px;
+        }
+        .style10
+        {
+            width: 7px;
+        }
+        .style11
+        {
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">          
+    <div>
+        <table style="width: 100%">
+            <tr>
+                <td colspan="10" style="height: 145px" bgcolor="#CC9900" rowspan="0">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td align="center" colspan="8"
+                    valign="middle">
+                    &nbsp;
+                    <table style="width: 1000px; position: static;background-image: url(CSS Templets/splendid/splendid/images/img02.jpg); height: 8px">
+                        <tr>
+                            <td style="width: 100px; height: 58px;" align="center" valign="middle">
+                                <asp:Menu ID="Menu1" runat="server" Font-Size="Small" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="HOME" Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td style="width: 100px; height: 58px;">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td style="width: 100px; height: 58px;">
+                                <asp:Menu ID="Menu2" runat="server" Font-Size="Small" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem Text="ABOUT US" Value="HOME" NavigateUrl="~/AboutUs.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td style="width: 100px; height: 58px;">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td style="width: 100px; height: 58px;">
+                                <asp:Menu ID="Menu3" runat="server" Font-Size="Small" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem Text="BLOGS" Value="HOME" NavigateUrl="~/Blogs.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td style="width: 100px; height: 58px;">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td style="width: 100px; height: 58px;">
+                                <asp:Menu ID="Menu4" runat="server" Font-Size="Small" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem Text="ADVERTISE" Value="HOME" NavigateUrl="~/Advertise.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td style="width: 100px; height: 58px;">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td style="width: 100px; height: 58px;"><asp:Menu ID="Menu5" runat="server" Font-Size="Small" ForeColor="White">
+                                <Items>
+                                    <asp:MenuItem Text="FEEDBACK" Value="HOME" NavigateUrl="~/Feedback.aspx"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                            </td>
+                            <td style="width: 100px; height: 58px;">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td style="width: 100px; height: 58px;"><asp:Menu ID="Menu6" runat="server" Font-Size="Small" ForeColor="White">
+                                <Items>
+                                    <asp:MenuItem Text="CONTACT US" Value="HOME" NavigateUrl="~/ContactUs.aspx"></asp:MenuItem>
+                                </Items>
+                            </asp:Menu>
+                            </td>
+                            <td style="width: 100px; height: 58px">
+                            </td>
+                            <td style="width: 389px; height: 58px">
+                            </td>
+                            <td style="width: 100px; height: 58px">
+                            </td>
+                            <td style="width: 79px; height: 58px;">
+                            </td>
+                            <td style="font-weight: bold; width: 204px; height: 58px">
+                                <strong style="font-weight: bold; color: #000000; font-family: Verdana">Job Search:</strong></td>
+                            <td style="width: 100px; height: 58px;">
+                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+                            <td style="width: 100px; height: 58px">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td align="center" colspan="8" valign="top">
+                    &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+                <td style="width: 100px; height: 17px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                    &nbsp;</td>
+                <td style="width: auto">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="10" style="background-image: url(CSS Templets/splendid/splendid/images/img01.jpg);
+                    height: 50px">
+                    <table class="style1">
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style9">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style7">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style10">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style4">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style3">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style2">
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td class="style11">
+                                <asp:Menu ID="Menu7" runat="server" Font-Size="X-Small" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/ContactUs.aspx" Text="Contact Us" 
+                                            Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style9">
+                                <asp:Menu ID="Menu9" runat="server" Font-Size="X-Small" ForeColor="White" 
+                                    Width="16px">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/TermsNCondition.aspx" 
+                                            Text="Terms &amp; Conditions" Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style7">
+                                <asp:Menu ID="Menu11" runat="server" Font-Size="X-Small" ForeColor="White" 
+                                    Height="16px">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/OurClient.aspx" Text="Our Clients" 
+                                            Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style6">
+                                <asp:Menu ID="Menu8" runat="server" Font-Size="X-Small" ForeColor="White" 
+                                    style="margin-left: 0px">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/PrivacyPolicy.aspx" 
+                                            Text="Privacy Policy" Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style10">
+                                <asp:Menu ID="Menu13" runat="server" Font-Size="X-Small" ForeColor="White" 
+                                    Height="16px">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/FAQs.aspx" Text="FAQs" 
+                                            Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style4">
+                                <asp:Menu ID="Menu10" runat="server" Font-Size="X-Small" ForeColor="White">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/SiteMap.aspx" Text="Site Map" 
+                                            Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style3">
+                                <asp:Menu ID="Menu14" runat="server" Font-Size="X-Small" ForeColor="White" 
+                                    Height="16px">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/CareersWithUs.aspx" Text="Careers With Us" 
+                                            Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td class="style8">
+                                <img src="CSS%20Templets/splendid/splendid/images/img07.jpg" style="width: 1px; height: 24px" /></td>
+                            <td class="style2">
+                                <asp:Menu ID="Menu12" runat="server" Font-Size="X-Small" ForeColor="White" 
+                                    Height="16px">
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" 
+                                            Value="HOME"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                            </td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td class="style11">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style9">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style7">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style6">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style10">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style4">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style3">
+                                &nbsp;</td>
+                            <td class="style8">
+                                &nbsp;</td>
+                            <td class="style2">
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                            <td>
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+                <td style="width: 100px">
+                </td>
+            </tr>
+        </table>
+    </div>           
+    </form>
+</body>
+</html>
